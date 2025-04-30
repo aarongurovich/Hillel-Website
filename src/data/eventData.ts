@@ -5,7 +5,7 @@ export const eventData = [
     time: "TBD",
     location: "TBD",
     description: "Join us for our weekly Shabbat dinner with delicious food, good company, and meaningful conversations.",
-    image: "src/data/ShabbatHillel.PNG"
+    image: "/ShabbatHillel.PNG"
   },
   {
     title: "Coffee Social",
@@ -13,7 +13,7 @@ export const eventData = [
     time: "TBD",
     location: "TBD",
     description: "Take a break from studying and enjoy coffee and conversations with fellow students.",
-    image: "src/data/HillelCoffee.PNG"
+    image: "/HillelCoffee.PNG"
   },
   {
     title: "Hanukkah Celebration",
@@ -21,6 +21,6 @@ export const eventData = [
     time: "TBD",
     location: "TBD",
     description: "Celebrate the Festival of Lights with menorah lighting, traditional foods, music, and games.",
-    image: "src/data/HannukahHillel.PNG"
+    image: "/HannukahHillel.PNG"
   },
 ];

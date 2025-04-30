@@ -52,7 +52,7 @@ export const About: React.FC = () => {
           
           <div className="order-1 lg:order-2 overflow-hidden rounded-xl shadow-xl">
             <img 
-              src="src\data\IsraelHillel.PNG" 
+              src="\IsraelHillel.PNG" 
               alt="Students gathering at Hillel" 
               className="w-full h-auto object-cover rounded-xl transform hover:scale-105 transition-transform duration-500"
             />

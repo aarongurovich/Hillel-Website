@@ -11,7 +11,7 @@ export const Hero: React.FC<HeroProps> = ({ onDonateClick }) => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('src/data/Hats.jpg')",
+            backgroundImage: "url('/Hats.jpg')",
             opacity: 0.3
           }}
         />
