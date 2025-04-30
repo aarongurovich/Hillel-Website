@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Globe } from 'lucide-react';
 
 export const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -22,7 +22,7 @@ export const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Form submission logic would go here
+    console.log('Form Data Submitted:', formData);
     alert('Thank you for your message! We will get back to you soon.');
     setFormData({
       name: '',
@@ -32,6 +32,11 @@ export const Contact: React.FC = () => {
       newsletter: false
     });
   };
+
+  const facebookUrl = 'https://www.facebook.com/groups/hillelatttu/';
+  const instagramUrl = 'https://www.instagram.com/ttuhillel/';
+  const hillelOrgUrl = 'https://www.hillel.org/college/texas-tech-university/';
+
 
   return (
     <section id="contact" className="py-20 bg-white">
@@ -88,7 +93,7 @@ export const Contact: React.FC = () => {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent bg-white"
                   required
                 >
                   <option value="">Select a subject</option>
@@ -133,7 +138,7 @@ export const Contact: React.FC = () => {
 
               <button
                 type="submit"
-                className="w-full py-3 bg-red-700 text-white rounded-md hover:bg-red-800 transition-colors flex items-center justify-center"
+                className="w-full py-3 bg-red-700 text-white rounded-md hover:bg-red-800 transition-colors flex items-center justify-center font-medium"
               >
                 <Send className="h-5 w-5 mr-2" />
                 Send Message
@@ -150,7 +155,6 @@ export const Contact: React.FC = () => {
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900 mb-1">Location</h4>
                   <p className="text-gray-700">
-                    Student Union Building<br />
                     Texas Tech University<br />
                     Lubbock, TX 79409
                   </p>
@@ -161,8 +165,8 @@ export const Contact: React.FC = () => {
                 <Mail className="h-6 w-6 text-red-700 mt-1 mr-4 flex-shrink-0" />
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900 mb-1">Email</h4>
-                  <a href="mailto:info@texastechhillel.org" className="text-gray-700 hover:text-red-700 transition-colors">
-                    info@texastechhillel.org
+                  <a href="mailto:aargurov@ttu.edu" className="text-gray-700 hover:text-red-700 transition-colors">
+                    aargurov@ttu.edu
                   </a>
                 </div>
               </div>
@@ -171,8 +175,8 @@ export const Contact: React.FC = () => {
                 <Phone className="h-6 w-6 text-red-700 mt-1 mr-4 flex-shrink-0" />
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900 mb-1">Phone</h4>
-                  <a href="tel:+18061234567" className="text-gray-700 hover:text-red-700 transition-colors">
-                    (806) 123-4567
+                  <a href="tel:+19495050956" className="text-gray-700 hover:text-red-700 transition-colors">
+                    (949) 505-0956
                   </a>
                 </div>
               </div>
@@ -204,16 +208,20 @@ export const Contact: React.FC = () => {
               <h4 className="text-lg font-semibold text-gray-900 mb-4">Connect With Us</h4>
               <div className="flex space-x-4">
                 <a
-                  href="#"
+                  href={facebookUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-red-700 text-white flex items-center justify-center hover:bg-red-800 transition-colors"
-                  aria-label="Facebook"
+                  aria-label="Facebook Group"
                 >
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1.02-1.1h3.22V.45h-4.41c-4.24 0-5.3 2.95-5.3 4.84v2.17H6.16v4.2h2.87V24h5.47V11.66h3.68l.47-4.2z" />
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href={instagramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-red-700 text-white flex items-center justify-center hover:bg-red-800 transition-colors"
                   aria-label="Instagram"
                 >
@@ -222,16 +230,17 @@ export const Contact: React.FC = () => {
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href={hillelOrgUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-red-700 text-white flex items-center justify-center hover:bg-red-800 transition-colors"
-                  aria-label="Twitter"
+                  aria-label="Hillel International"
                 >
-                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M23.954 4.569a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.054 10.054 0 01-3.126 1.195 4.914 4.914 0 00-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.061a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z" />
-                  </svg>
+                  <Globe className="h-5 w-5" />
                 </a>
               </div>
             </div>
+
           </div>
         </div>
       </div>

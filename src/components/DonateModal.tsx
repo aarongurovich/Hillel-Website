@@ -63,7 +63,7 @@ export const DonateModal: React.FC<DonateModalProps> = ({ show, onClose }) => {
             <ol className="list-decimal pl-5 space-y-2 text-gray-700">
               <li>Open your banking app that offers Zelle</li>
               <li>Select "Send Money with Zelle"</li>
-              <li>Add a recipient with the email: <span className="font-semibold">donations@texastechhillel.org</span></li>
+              <li>Add a recipient with the email: <span className="font-semibold">TBD@TBD.com</span></li>
               <li>Enter the amount you wish to donate</li>
               <li>In the memo field, please specify "Donation" and your name</li>
               <li>Review the information and send your donation</li>
@@ -87,8 +87,7 @@ export const DonateModal: React.FC<DonateModalProps> = ({ show, onClose }) => {
           </p>
           
           <p className="text-gray-700 mb-8">
-            If you have any questions about donating, please contact us at 
-            <a href="mailto:donations@texastechhillel.org" className="text-red-700 hover:underline"> donations@texastechhillel.org</a>.
+            If you have any questions about donating, please contact us at <a href="mailto:aargurov@ttu.edu" className="text-red-700 hover:underline">aargurov@ttu.edu</a>.
           </p>
           
           <div className="flex justify-center">

@@ -15,6 +15,8 @@ export const Gallery: React.FC = () => {
     document.body.style.overflow = 'auto';
   };
 
+  const instagramUrl = 'https://www.instagram.com/ttuhillel/';
+
   return (
     <section id="gallery" className="py-20 bg-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -46,17 +48,27 @@ export const Gallery: React.FC = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button className="px-6 py-3 bg-transparent border-2 border-red-700 text-red-700 rounded-md hover:bg-red-700 hover:text-white transition-colors font-medium">
+          <a
+            href={instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-3 bg-transparent border-2 border-red-700 text-red-700 rounded-md hover:bg-red-700 hover:text-white transition-colors font-medium"
+          >
             View All Photos
-          </button>
+          </a>
         </div>
 
-        {/* Image modal */}
         {selectedImage && (
-          <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
+          <div
+            className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
+            onClick={closeModal}
+          >
             <button
-              onClick={closeModal}
-              className="absolute top-4 right-4 text-white focus:outline-none"
+              onClick={(e) => {
+                e.stopPropagation();
+                closeModal();
+              }}
+              className="absolute top-4 right-4 text-white hover:text-gray-300 focus:outline-none transition-colors"
               aria-label="Close modal"
             >
               <X className="h-8 w-8" />
@@ -65,6 +77,7 @@ export const Gallery: React.FC = () => {
               src={selectedImage}
               alt="Enlarged gallery photo"
               className="max-w-full max-h-[90vh] object-contain"
+              onClick={(e) => e.stopPropagation()}
             />
           </div>
         )}

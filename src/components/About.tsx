@@ -18,7 +18,7 @@ export const About: React.FC = () => {
               so they may enrich the Jewish people and the world.
             </p>
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Founded over 25 years ago, we have been a home away from home for countless students, 
+              Founded over 100 years ago, we have been a home away from home for countless students, 
               providing them with opportunities to explore Jewish identity, culture, and traditions 
               while building meaningful connections with peers.
             </p>
@@ -52,7 +52,7 @@ export const About: React.FC = () => {
           
           <div className="order-1 lg:order-2 overflow-hidden rounded-xl shadow-xl">
             <img 
-              src="https://images.pexels.com/photos/3769960/pexels-photo-3769960.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+              src="src\data\IsraelHillel.PNG" 
               alt="Students gathering at Hillel" 
               className="w-full h-auto object-cover rounded-xl transform hover:scale-105 transition-transform duration-500"
             />

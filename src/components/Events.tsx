@@ -3,6 +3,8 @@ import { Calendar, Clock, MapPin } from 'lucide-react';
 import { eventData } from '../data/eventData';
 
 export const Events: React.FC = () => {
+  const instagramUrl = 'https://www.instagram.com/ttuhillel/';
+
   return (
     <section id="events" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -17,11 +19,11 @@ export const Events: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {eventData.map((event, index) => (
-            <div 
+            <div
               key={index}
               className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1"
             >
-              <div 
+              <div
                 className="h-48 overflow-hidden relative"
                 style={{
                   backgroundImage: `url(${event.image})`,
@@ -56,9 +58,14 @@ export const Events: React.FC = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <button className="px-6 py-3 bg-transparent border-2 border-red-700 text-red-700 rounded-md hover:bg-red-700 hover:text-white transition-colors font-medium">
+          <a
+            href={instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-3 bg-transparent border-2 border-red-700 text-red-700 rounded-md hover:bg-red-700 hover:text-white transition-colors font-medium"
+          >
             View All Events
-          </button>
+          </a>
         </div>
       </div>
     </section>
