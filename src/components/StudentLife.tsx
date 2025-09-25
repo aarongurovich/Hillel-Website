@@ -62,7 +62,7 @@ export const StudentLife: React.FC = () => {
 
           <div className="order-1 lg:order-2 relative">
             <img
-              src="\hillelresearch.jpg"
+              src="\Texas_Tech_University2.jpg"
               alt="Students at Texas Tech Hillel"
               className="rounded-xl shadow-xl w-full h-auto object-cover"
             />
