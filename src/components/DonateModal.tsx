@@ -63,7 +63,7 @@ export const DonateModal: React.FC<DonateModalProps> = ({ show, onClose }) => {
             <ol className="list-decimal pl-5 space-y-2 text-gray-700">
               <li>Open your banking app that offers Zelle</li>
               <li>Select "Send Money with Zelle"</li>
-              <li>Add a recipient with the email: <span className="font-semibold">TBD@TBD.com</span></li>
+              <li>Add a recipient with the phone number: <span className="font-semibold">925-434-1236</span></li>
               <li>Enter the amount you wish to donate</li>
               <li>In the memo field, please specify "Donation" and your name</li>
               <li>Review the information and send your donation</li>

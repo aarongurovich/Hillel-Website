@@ -55,14 +55,6 @@ export const Footer: React.FC<FooterProps> = ({ onDonateClick }) => {
               </li>
               <li>
                 <button
-                  onClick={() => scrollToSection('events')}
-                  className="text-gray-400 hover:text-white transition-colors text-left"
-                >
-                  Events
-                </button>
-              </li>
-              <li>
-                <button
                   onClick={() => scrollToSection('student-life')}
                   className="text-gray-400 hover:text-white transition-colors text-left"
                 >
@@ -75,14 +67,6 @@ export const Footer: React.FC<FooterProps> = ({ onDonateClick }) => {
                   className="text-gray-400 hover:text-white transition-colors text-left"
                 >
                   Gallery
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => scrollToSection('contact')}
-                  className="text-gray-400 hover:text-white transition-colors text-left"
-                >
-                  Contact
                 </button>
               </li>
             </ul>

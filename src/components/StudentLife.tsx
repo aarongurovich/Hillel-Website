@@ -67,7 +67,7 @@ export const StudentLife: React.FC = () => {
               className="rounded-xl shadow-xl w-full h-auto object-cover"
             />
             <div className="absolute -bottom-8 -left-8 bg-blue-800 text-white p-6 rounded-lg shadow-lg hidden sm:block">
-              <p className="text-xl font-semibold">100+</p>
+              <p className="text-xl font-semibold">20+</p>
               <p>Active Students</p>
             </div>
           </div>

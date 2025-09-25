@@ -25,10 +25,8 @@ function App() {
       <Navbar onDonateClick={handleDonateClick} />
       <Hero onDonateClick={handleDonateClick} />
       <About />
-      <Events />
       <StudentLife />
       <Gallery />
-      <Contact />
       <Footer onDonateClick={handleDonateClick} />
       <DonateModal show={showDonateModal} onClose={handleCloseModal} />
     </div>
