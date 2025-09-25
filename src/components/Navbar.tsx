@@ -90,12 +90,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onDonateClick }) => {
               About Us
             </button>
             <button
-              onClick={() => scrollToSection('events')}
-              className="block px-3 py-2 w-full text-left text-gray-800 hover:text-red-700 transition-colors"
-            >
-              Events
-            </button>
-            <button
               onClick={() => scrollToSection('student-life')}
               className="block px-3 py-2 w-full text-left text-gray-800 hover:text-red-700 transition-colors"
             >
@@ -106,12 +100,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onDonateClick }) => {
               className="block px-3 py-2 w-full text-left text-gray-800 hover:text-red-700 transition-colors"
             >
               Gallery
-            </button>
-            <button
-              onClick={() => scrollToSection('contact')}
-              className="block px-3 py-2 w-full text-left text-gray-800 hover:text-red-700 transition-colors"
-            >
-              Contact
             </button>
             <button
               onClick={onDonateClick}
