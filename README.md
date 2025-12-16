@@ -1,3 +1,7 @@
+# Texas Tech Hillel Website
+
+A modern, responsive website designed for Texas Tech Hillel to serve as the digital hub for Jewish life on campus. This application showcases the community's mission, values, events, and student opportunities using a robust tech stack built for performance and maintainability.
+
 ## Getting Started
 
 Follow these steps to set up the project locally.
